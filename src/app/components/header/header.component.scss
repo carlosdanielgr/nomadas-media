@@ -1,0 +1,24 @@
+@use "../../../styles/mixins" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  &__content {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+  }
+  &__navbar {
+    flex: 1 1 auto;
+    @include screen(custom, max, 992) {
+      display: none;
+    }
+    .navbar-nav {
+      gap: 5rem;
+      flex: 1 1 auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

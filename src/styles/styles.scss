@@ -1,11 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@use "mixins" as *;
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
 :root {
+  --primary: #a75eff;
   --bg-color: #fff5ee;
+  --mx-width: 1800px;
+}
+
+* {
+  font-size: 17px;
+
+  @include screen(small) {
+    font-size: 20px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Cabinet Grotesk", sans-serif;
   background-color: var(--bg-color);
 }
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  max-width: var(--mx-width);
+  margin: 0 auto;
+}
+
+/* OVERRIDE */
+
+.btn-primary {
+  padding: 1rem 1.5rem;
+  border-color: #303030;
+  border-radius: 50px;
+  background-color: var(--primary);
+  &:hover {
+    border-color: #303030;
+    background-color: var(--primary);
+    box-shadow: 0 2px 7px #000;
+    scale: 1.01;
+  }
+}
