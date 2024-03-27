@@ -5,6 +5,7 @@
   top: 0;
   z-index: 1000;
   padding: 1rem;
+  background-color: var(--bg-color);
   &__content {
     max-width: var(--mx-width);
     margin: 0 auto;
