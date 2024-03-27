@@ -1,7 +1,6 @@
 @use "../../../styles/mixins" as *;
 
 .content-title {
-  border-bottom: 1px solid var(--black);
   &__title {
     font-size: 3rem;
     padding: 2rem 0;

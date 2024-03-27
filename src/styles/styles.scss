@@ -44,6 +44,10 @@ article {
   margin: 0 auto;
 }
 
+section {
+  border-bottom: 1px solid var(--black);
+}
+
 /* OVERRIDE */
 
 .btn-primary {
