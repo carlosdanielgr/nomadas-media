@@ -1,0 +1,28 @@
+@use "../../../styles/mixins" as *;
+
+.targets {
+  &__content {
+    padding: 2rem;
+    max-width: 1300px;
+    > div {
+      display: flex;
+      justify-content: center;
+      row-gap: 1rem;
+      @include screen(custom, max, 992) {
+        max-width: 24rem;
+        margin: 0 auto;
+        flex-wrap: wrap;
+      }
+    }
+    span {
+      padding: 0.5rem 3rem;
+      font-weight: 700;
+      border-radius: 50px;
+      border: 1px solid var(--black);
+    }
+  }
+  &__bgBlack {
+    background-color: var(--black);
+    color: var(--bg-color);
+  }
+}
