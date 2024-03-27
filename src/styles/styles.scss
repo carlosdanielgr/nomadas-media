@@ -6,6 +6,7 @@
 :root {
   --primary: #a75eff;
   --bg-color: #fff5ee;
+  --black: #303030;
   --mx-width: 1800px;
 }
 
@@ -47,11 +48,11 @@ article {
 
 .btn-primary {
   padding: 1rem 1.5rem;
-  border-color: #303030;
+  border-color: var(--black);
   border-radius: 50px;
   background-color: var(--primary);
   &:hover {
-    border-color: #303030;
+    border-color: var(--black);
     background-color: var(--primary);
     box-shadow: 0 2px 7px #000;
     scale: 1.01;
