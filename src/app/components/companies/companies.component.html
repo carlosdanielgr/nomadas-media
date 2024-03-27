@@ -1,0 +1,18 @@
+<article class="companies">
+  <ngb-carousel [showNavigationIndicators]="false">
+    @for (item_images of images; track $index) {
+    <ng-template ngbSlide>
+      <div class="companies__images">
+        @for (item of item_images; track $index) {
+        <figure
+          class="companies__image"
+          [class.companies__image--small]="item.isSmall"
+        >
+          <img [src]="item.url" alt="image" />
+        </figure>
+        }
+      </div>
+    </ng-template>
+    }
+  </ngb-carousel>
+</article>

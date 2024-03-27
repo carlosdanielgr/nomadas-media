@@ -63,3 +63,17 @@ section {
     scale: 1.01;
   }
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 0.8rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./../assets/icons/arrow.svg);
+}
+
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+  background-image: url(./../assets/icons/arrow.svg);
+}

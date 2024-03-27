@@ -1,0 +1,17 @@
+.companies {
+  padding: 4rem 2rem;
+  &__images {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6.5rem;
+  }
+
+  &__image {
+    width: 7.2rem;
+    &--small {
+      width: 9.2rem;
+    }
+  }
+}
