@@ -3,6 +3,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContentTitleComponent } from './components/content-title/content-title.component';
 import { TargetsComponent } from './components/targets/targets.component';
 import { CompaniesComponent } from './components/companies/companies.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { CompaniesComponent } from './components/companies/companies.component';
     ContentTitleComponent,
     TargetsComponent,
     CompaniesComponent,
+    ServicesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
