@@ -4,6 +4,7 @@ import { ContentTitleComponent } from './components/content-title/content-title.
 import { TargetsComponent } from './components/targets/targets.component';
 import { CompaniesComponent } from './components/companies/companies.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ContentInfoComponent } from './components/content-info/content-info.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ServicesComponent } from './components/services/services.component';
     TargetsComponent,
     CompaniesComponent,
     ServicesComponent,
+    ContentInfoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

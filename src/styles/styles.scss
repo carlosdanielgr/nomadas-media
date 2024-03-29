@@ -77,3 +77,7 @@ section {
   transform: rotate(180deg);
   background-image: url(./../assets/icons/arrow.svg);
 }
+
+.card {
+  border-color: var(--black);
+}
