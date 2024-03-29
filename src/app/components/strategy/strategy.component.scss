@@ -1,0 +1,11 @@
+.strategy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  > figure {
+    width: 80%;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+}

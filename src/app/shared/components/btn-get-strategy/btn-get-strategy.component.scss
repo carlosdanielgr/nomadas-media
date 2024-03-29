@@ -1,0 +1,12 @@
+@use "./../../../../styles/mixins" as *;
+
+.btn-get-strategy {
+  white-space: wrap;
+  font-size: 0.8rem;
+  width: 100%;
+  @include screen(med-small) {
+    > span {
+      font-size: 1.5rem;
+    }
+  }
+}

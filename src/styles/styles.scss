@@ -48,6 +48,24 @@ section {
   border-bottom: 1px solid var(--black);
 }
 
+hr {
+  border-color: var(--black);
+  opacity: 1;
+}
+
+.subtitle,
+.subtitle > span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  @include screen(med-small) {
+    font-size: 4.5rem;
+  }
+}
+
+.subtitle > span {
+  color: var(--primary);
+}
+
 /* OVERRIDE */
 
 .btn-primary {
