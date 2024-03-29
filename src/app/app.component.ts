@@ -6,6 +6,7 @@ import { CompaniesComponent } from './components/companies/companies.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContentInfoComponent } from './components/content-info/content-info.component';
 import { StrategyComponent } from './components/strategy/strategy.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { StrategyComponent } from './components/strategy/strategy.component';
     ServicesComponent,
     ContentInfoComponent,
     StrategyComponent,
+    ProjectsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -1,0 +1,45 @@
+@use "../../../styles/mixins" as *;
+
+.projects {
+  padding: 3rem 1rem;
+  &__cards {
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    @include screen(small) {
+      display: flex;
+    }
+  }
+  .card {
+    max-width: 19rem;
+    @include screen(custom, max, 768) {
+      margin: 0 auto;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    > span {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+  }
+  &__labels {
+    display: flex;
+    gap: 0.5rem;
+    > span {
+      border-radius: 50px;
+      padding: 0.2rem 0.7rem;
+      background-color: #e9dffc;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      font-size: 0.7rem;
+    }
+  }
+  &__carousel {
+    @include screen(small) {
+      display: none !important;
+    }
+  }
+}

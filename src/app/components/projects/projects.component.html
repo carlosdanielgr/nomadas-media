@@ -1,0 +1,33 @@
+<section>
+  <article class="projects">
+    <h3 class="subtitle">Nuestros proyectos</h3>
+    <div class="projects__cards">
+      @for (item of [].constructor(8); track $index) {
+      <ng-container *ngTemplateOutlet="card"></ng-container>
+      }
+    </div>
+    <ngb-carousel class="projects__carousel" [showNavigationIndicators]="false">
+      @for (item of [].constructor(8); track $index) {
+      <ng-template ngbSlide>
+        <ng-container *ngTemplateOutlet="card"></ng-container>
+      </ng-template>
+      }
+    </ngb-carousel>
+  </article>
+</section>
+<ng-template #card>
+  <div class="card">
+    <div class="card-body projects__card">
+      <figure>
+        <img src="./assets/images/preview.png" alt="preview" />
+      </figure>
+      <span>Nombre del proyecto</span>
+      <div class="projects__labels">
+        <span>UX Design</span>
+        <span>Otros</span>
+        <span>JavaScript</span>
+      </div>
+      <button type="button" class="btn btn-dark w-100">Por definir</button>
+    </div>
+  </div>
+</ng-template>
