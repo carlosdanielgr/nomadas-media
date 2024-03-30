@@ -9,6 +9,7 @@ import { StrategyComponent } from './components/strategy/strategy.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FormComponent } from './components/form/form.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { FaqsComponent } from './components/faqs/faqs.component';
     ProjectsComponent,
     FormComponent,
     FaqsComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
