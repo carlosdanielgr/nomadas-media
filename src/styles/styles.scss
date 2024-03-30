@@ -74,9 +74,11 @@ hr {
   border-radius: 50px;
   background-color: var(--primary);
   white-space: nowrap;
-  &:hover {
-    border-color: var(--black);
-    background-color: var(--primary);
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--black) !important;
+    background-color: var(--primary) !important;
     box-shadow: 0 2px 7px #000;
     scale: 1.01;
   }
@@ -102,4 +104,54 @@ hr {
 
 .card {
   border-color: var(--black);
+}
+
+.form-label {
+  color: #fff;
+}
+
+.form-control,
+.dropdown-toggle {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  &:focus,
+  &:hover,
+  &:active {
+    color: #fff !important;
+    background-color: transparent;
+    box-shadow: none;
+    border-color: #fff;
+  }
+  &::placeholder {
+    color: #525252;
+  }
+}
+
+.form-dropdown {
+  width: calc(100% - 4rem);
+}
+
+.dropdown-toggle,
+.dropdown-toggle.show {
+  white-space: wrap;
+  text-align: left;
+  width: 100%;
+  padding-left: 0;
+  &::after {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  background-color: #525252;
+  > button {
+    color: #fff;
+    &:active {
+      color: var(--black);
+      background-color: var(--bg-color);
+    }
+  }
 }

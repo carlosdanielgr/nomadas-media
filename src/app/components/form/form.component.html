@@ -1,0 +1,123 @@
+<article class="form">
+  <h3 class="subtitle">TRANSFORMA TU NEGOCIO HOY MISMO</h3>
+  <p>
+    Si tienes una idea que te gustaría que trabajáramos juntos, puedes
+    comunicárnosla rellenando los datos que figuran a continuación.
+  </p>
+  <form class="form__content" [formGroup]="form">
+    <div>
+      <label for="name" class="form-label">Nombre</label>
+      <input
+        id="name"
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        aria-describedby="name"
+        formControlName="full_name"
+      />
+    </div>
+    <div>
+      <label for="email" class="form-label">Correo</label>
+      <input
+        id="email"
+        type="email"
+        class="form-control"
+        placeholder="Correo"
+        aria-describedby="email"
+        formControlName="email"
+      />
+    </div>
+    <div>
+      <label for="phone" class="form-label">Teléfono</label>
+      <input
+        id="phone"
+        type="text"
+        class="form-control"
+        placeholder="Teléfono"
+        aria-describedby="phone"
+        formControlName="phone"
+      />
+    </div>
+    <div>
+      <label for="company_name" class="form-label">Nombre del negocio</label>
+      <input
+        id="company_name"
+        type="text"
+        class="form-control"
+        placeholder="Nombre del negocio"
+        aria-describedby="name"
+        formControlName="company_name"
+      />
+    </div>
+    <div ngbDropdown container="body" dropdownClass="form-dropdown">
+      <button type="button" class="btn" ngbDropdownToggle>
+        <p>¿Trabajas o has trabajado con una agencia de marketing antes?</p>
+        <span
+          class="form__drop-value"
+          [class.form__drop-value--active]="form.controls['marketing'].value"
+        >
+          {{ form.controls["marketing"].value || "Si" }}
+        </span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="Menu">
+        <button ngbDropdownItem (click)="onSelectItem('Si', 'marketing')">
+          Si
+        </button>
+        <button ngbDropdownItem (click)="onSelectItem('No', 'marketing')">
+          No
+        </button>
+      </div>
+    </div>
+    <div ngbDropdown container="body" dropdownClass="form-dropdown">
+      <button type="button" class="btn" ngbDropdownToggle>
+        <p>¿Tienes una Página Web o Tienda Online?</p>
+        <span
+          class="form__drop-value"
+          [class.form__drop-value--active]="form.controls['program'].value"
+        >
+          {{ form.controls["program"].value || "Si" }}
+        </span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="Menu">
+        <button ngbDropdownItem (click)="onSelectItem('Si', 'program')">
+          Si
+        </button>
+        <button ngbDropdownItem (click)="onSelectItem('No', 'program')">
+          No
+        </button>
+      </div>
+    </div>
+    <div ngbDropdown container="body" dropdownClass="form-dropdown">
+      <button type="button" class="btn" ngbDropdownToggle>
+        <p>¿Qué tipo de negocio tienes?</p>
+        <span
+          class="form__drop-value"
+          [class.form__drop-value--active]="form.controls['business'].value"
+        >
+          {{ form.controls["business"].value || "Si" }}
+        </span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="Menu">
+        <button ngbDropdownItem (click)="onSelectItem('Si', 'business')">
+          Si
+        </button>
+        <button ngbDropdownItem (click)="onSelectItem('No', 'business')">
+          No
+        </button>
+        <!-- 
+          <div class="px-3">
+            <input
+              type="text"
+              class="form-control form__other"
+              placeholder="Otro"
+              aria-describedby="sector company"
+              (input)="setOther($event.target)"
+            />
+          </div> -->
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button type="button" class="btn btn-primary">ENVIAR FORMULARIO</button>
+    </div>
+  </form>
+</article>
