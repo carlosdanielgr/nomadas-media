@@ -3,6 +3,11 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 
+@font-face {
+  font-family: "Thick Thinks";
+  src: url(./../assets/fonts/Thick\ Thinks.ttf);
+}
+
 :root {
   --primary: #a75eff;
   --bg-color: #fff5ee;
@@ -185,4 +190,8 @@ hr {
     font-weight: 700;
     font-size: 2.3rem;
   }
+}
+
+.accordion-body {
+  border: 1px solid var(--black);
 }

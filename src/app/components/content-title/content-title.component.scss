@@ -3,11 +3,11 @@
 .content-title {
   &__title {
     font-size: 3rem;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     text-align: center;
-    font-family: "thick", sans-serif;
+    font-family: "Thick Thinks", sans-serif;
     margin-bottom: 0;
     @include screenLimit(768px, 1700px) {
       font-size: 13vw;

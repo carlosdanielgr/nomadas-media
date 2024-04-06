@@ -9,6 +9,10 @@
   &__content {
     max-width: var(--mx-width);
     margin: 0 auto;
+    @include screen(custom, max, 992) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &__navbar {
     flex: 1 1 auto;
