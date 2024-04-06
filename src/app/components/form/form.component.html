@@ -51,13 +51,15 @@
     </div>
     <div ngbDropdown container="body" dropdownClass="form-dropdown">
       <button type="button" class="btn" ngbDropdownToggle>
-        <p>¿Trabajas o has trabajado con una agencia de marketing antes?</p>
-        <span
-          class="form__drop-value"
-          [class.form__drop-value--active]="form.controls['marketing'].value"
-        >
-          {{ form.controls["marketing"].value || "Si" }}
-        </span>
+        <div>
+          <p>¿Trabajas o has trabajado con una agencia de marketing antes?</p>
+          <span
+            class="form__drop-value"
+            [class.form__drop-value--active]="form.controls['marketing'].value"
+          >
+            {{ form.controls["marketing"].value || "Si" }}
+          </span>
+        </div>
       </button>
       <div ngbDropdownMenu aria-labelledby="Menu">
         <button ngbDropdownItem (click)="onSelectItem('Si', 'marketing')">
@@ -70,13 +72,15 @@
     </div>
     <div ngbDropdown container="body" dropdownClass="form-dropdown">
       <button type="button" class="btn" ngbDropdownToggle>
-        <p>¿Tienes una Página Web o Tienda Online?</p>
-        <span
-          class="form__drop-value"
-          [class.form__drop-value--active]="form.controls['program'].value"
-        >
-          {{ form.controls["program"].value || "Si" }}
-        </span>
+        <div>
+          <p>¿Tienes una Página Web o Tienda Online?</p>
+          <span
+            class="form__drop-value"
+            [class.form__drop-value--active]="form.controls['program'].value"
+          >
+            {{ form.controls["program"].value || "Si" }}
+          </span>
+        </div>
       </button>
       <div ngbDropdownMenu aria-labelledby="Menu">
         <button ngbDropdownItem (click)="onSelectItem('Si', 'program')">
@@ -87,37 +91,51 @@
         </button>
       </div>
     </div>
+    <div>
+      <label for="business" class="form-label"
+        >¿Qué tipo de negocio tienes?</label
+      >
+      <input
+        id="business"
+        type="text"
+        class="form-control"
+        placeholder="¿Qué tipo de negocio tienes?"
+        aria-describedby="business"
+        formControlName="business"
+      />
+    </div>
     <div ngbDropdown container="body" dropdownClass="form-dropdown">
       <button type="button" class="btn" ngbDropdownToggle>
-        <p>¿Qué tipo de negocio tienes?</p>
-        <span
-          class="form__drop-value"
-          [class.form__drop-value--active]="form.controls['business'].value"
-        >
-          {{ form.controls["business"].value || "Si" }}
-        </span>
+        <div>
+          <p>¿Cual es tu capacidad de inversión en publicidad?</p>
+          <span
+            class="form__drop-value"
+            [class.form__drop-value--active]="form.controls['investment'].value"
+          >
+            {{ form.controls["investment"].value || "$10,000" }}
+          </span>
+        </div>
       </button>
       <div ngbDropdownMenu aria-labelledby="Menu">
-        <button ngbDropdownItem (click)="onSelectItem('Si', 'business')">
-          Si
+        <button
+          ngbDropdownItem
+          (click)="onSelectItem('5000-11000', 'investment')"
+        >
+          $5,000 a $11,000
         </button>
-        <button ngbDropdownItem (click)="onSelectItem('No', 'business')">
-          No
+        <button
+          ngbDropdownItem
+          (click)="onSelectItem('11000-30000', 'investment')"
+        >
+          $11,000 a $30,000
         </button>
-        <!-- 
-          <div class="px-3">
-            <input
-              type="text"
-              class="form-control form__other"
-              placeholder="Otro"
-              aria-describedby="sector company"
-              (input)="setOther($event.target)"
-            />
-          </div> -->
+        <button ngbDropdownItem (click)="onSelectItem('>30000', 'investment')">
+          $31,000 o más
+        </button>
       </div>
     </div>
     <div class="text-center mt-5">
-      <button type="button" class="btn btn-primary">ENVIAR FORMULARIO</button>
+      <button type="button" class="btn btn-primary">Enviar</button>
     </div>
   </form>
 </article>

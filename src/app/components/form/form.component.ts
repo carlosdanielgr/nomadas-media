@@ -33,6 +33,7 @@ export class FormComponent implements OnInit {
       marketing: ['', [Validators.required]],
       program: ['', [Validators.required]],
       business: ['', [Validators.required]],
+      investment: ['', [Validators.required]],
     });
   }
 
