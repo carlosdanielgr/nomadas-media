@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BtnGetStrategyComponent } from '../../shared/components/btn-get-strategy/btn-get-strategy.component';
+import { BtnGetStrategyComponent } from '../../../../shared/components/btn-get-strategy/btn-get-strategy.component';
 
 @Component({
   selector: 'app-strategy',
