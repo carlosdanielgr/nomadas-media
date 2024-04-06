@@ -14,6 +14,9 @@ const ORIGINAL_IMAGES: Image[] = [
     url: `${URL_IMAGE}actus.png`,
   },
   {
+    url: `${URL_IMAGE}resuelve.png`,
+  },
+  {
     url: `${URL_IMAGE}kia.png`,
   },
   {

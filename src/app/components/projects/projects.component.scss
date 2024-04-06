@@ -8,10 +8,11 @@
     gap: 1rem;
     @include screen(small) {
       display: flex;
+      justify-content: center;
     }
   }
   .card {
-    max-width: 19rem;
+    width: 19rem;
     @include screen(custom, max, 768) {
       margin: 0 auto;
     }
@@ -25,16 +26,29 @@
       font-size: 1.4rem;
     }
   }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9dffc;
+    height: 10rem;
+    padding: 1rem;
+    > img {
+      object-fit: none;
+    }
+  }
   &__labels {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     > span {
       border-radius: 50px;
-      padding: 0.2rem 0.7rem;
+      padding: 0.2rem 0.4rem;
       background-color: #e9dffc;
       color: var(--primary);
       border: 1px solid var(--primary);
       font-size: 0.7rem;
+      white-space: nowrap;
     }
   }
   &__carousel {
