@@ -6,7 +6,7 @@
         @for (item of item_images; track $index) {
         <figure
           class="companies__image"
-          [class.companies__image--small]="item.isSmall"
+          [class.companies__image--tall]="item.isTall"
         >
           <img [src]="item.url" alt="image" />
         </figure>

@@ -4,53 +4,44 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 interface Image {
   url: string;
-  isSmall?: boolean;
+  isTall?: boolean;
 }
 
 const URL_IMAGE = './assets/images/companies/';
 
 const ORIGINAL_IMAGES: Image[] = [
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}actus.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}kia.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}dogger.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}nissan.png`,
+    isTall: true,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}mitsubishi.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}professional.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}huertas.png`,
+    isTall: true,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}redbridge.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}caribe.png`,
   },
   {
-    url: `${URL_IMAGE}Company-01.png`,
-  },
-  {
-    url: `${URL_IMAGE}Company-01.png`,
-  },
-  {
-    url: `${URL_IMAGE}Company-01.png`,
-  },
-  {
-    url: `${URL_IMAGE}Company-01.png`,
-  },
-  {
-    url: `${URL_IMAGE}Company-01.png`,
+    url: `${URL_IMAGE}coffee.png`,
+    isTall: true,
   },
 ];
 

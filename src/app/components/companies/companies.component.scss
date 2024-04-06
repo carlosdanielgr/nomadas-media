@@ -10,8 +10,10 @@
 
   &__image {
     width: 7.2rem;
-    &--small {
-      width: 9.2rem;
+    &--tall {
+      > img {
+        object-fit: none;
+      }
     }
   }
 }
