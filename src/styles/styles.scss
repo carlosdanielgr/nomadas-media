@@ -75,18 +75,46 @@ hr {
 /* OVERRIDE */
 
 .btn-primary {
+  position: relative;
   padding: 0.5rem 1.5rem;
   border-color: var(--black);
   border-radius: 50px;
   background-color: var(--primary);
-  white-space: nowrap;
+  overflow: hidden;
   &:hover,
   &:focus,
   &:active {
     border-color: var(--black) !important;
     background-color: var(--primary) !important;
-    box-shadow: 0 2px 7px #000;
-    scale: 1.01;
+    transform: scale(1.015);
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1.5rem;
+    background: hsla(0, 0%, 100%, 0.7);
+    transform: skewX(-20deg) translateX(0);
+  }
+}
+
+.btn-primary:hover:not(:disabled):after {
+  -webkit-animation: buttonShine 3s 1 forwards;
+  animation: buttonShine 3s 1 forwards;
+  content: "";
+}
+
+@keyframes buttonShine {
+  0% {
+    -webkit-transform: skewX(-20deg) translateX(0);
+    transform: skewX(-20deg) translateX(0);
+  }
+
+  to {
+    -webkit-transform: skewX(-20deg) translateX(3000px);
+    transform: skewX(-20deg) translateX(3000px);
   }
 }
 
