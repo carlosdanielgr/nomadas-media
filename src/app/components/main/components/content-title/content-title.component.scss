@@ -3,17 +3,21 @@
 .content-title {
   &__title {
     font-size: 3rem;
-    padding: 2rem 0 0;
+    padding: 1.5rem 0 0;
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     text-align: center;
     font-family: "Thick Thinks", sans-serif;
     margin-bottom: 0;
     @include screenLimit(768px, 1700px) {
+      padding-top: 5vw;
       font-size: 13vw;
+      line-height: 5rem;
     }
     @include screen(custom, min, 1700) {
-      font-size: 10.5rem;
+      padding-top: 5rem;
+      font-size: 14rem;
+      line-height: 9rem;
     }
   }
   &__content {
@@ -28,6 +32,7 @@
   &__info {
     padding: 2rem;
     @include screen(med-small) {
+      line-height: 3rem;
       border-right: 1px solid var(--black);
       flex-basis: 65%;
     }
