@@ -14,6 +14,9 @@
       flex-wrap: wrap;
     }
   }
+  &__logo {
+    max-width: 13rem;
+  }
   &__navbar {
     flex: 1 1 auto;
     @include screen(custom, max, 992) {

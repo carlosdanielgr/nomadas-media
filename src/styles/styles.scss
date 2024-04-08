@@ -16,10 +16,10 @@
 }
 
 * {
-  font-size: 17px;
+  font-size: 14px;
 
   @include screen(small) {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
