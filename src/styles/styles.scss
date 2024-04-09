@@ -122,6 +122,12 @@ hr {
   border-radius: 0;
 }
 
+.btn:disabled {
+  background-color: var(--primary);
+  border-color: var(--black);
+  opacity: 0.5;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 0.8rem;

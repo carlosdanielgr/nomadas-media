@@ -135,7 +135,21 @@
       </div>
     </div>
     <div class="text-center mt-5">
-      <button type="button" class="btn btn-primary">Enviar</button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        [disabled]="loading"
+        (click)="onPostForm()"
+      >
+        @if (loading) {
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        }@else { Enviar }
+      </button>
     </div>
   </form>
 </article>
