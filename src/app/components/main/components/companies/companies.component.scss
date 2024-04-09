@@ -9,10 +9,15 @@
   }
 
   &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 7.2rem;
+    height: 100%;
     &--tall {
       > img {
-        object-fit: none;
+        height: 100%;
+        object-fit: contain;
       }
     }
   }
