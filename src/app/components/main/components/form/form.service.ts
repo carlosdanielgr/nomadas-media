@@ -9,8 +9,8 @@ export class FormService {
 
   postForm(body: any) {
     return this.http.post(
-      'https://sheet.best/api/sheets/2e3b8fb8-0651-4f44-a789-2092d7d1e3ff',
-      body
+      'https://api.apispreadsheets.com/data/f6uhHN60Oaf474V9/',
+      body,
     );
   }
 }
